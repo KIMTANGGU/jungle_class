@@ -6,13 +6,50 @@
     <title>html</title>
 		<link rel="stylesheet" href="css/reset.css">
 		<style>
-			body, h1{margin:0}
-			a{color:#fff}
+			.wrap{
+				width:1024px;
+				margin:0 auto;
+			}
 
 			.header{
 				background:#333;
 				color:#fff;
 				padding:20px;
+			}
+			.container{
+				display:flex;
+				height: 300px;
+			}
+			.container .section{
+				background: lavender;
+				flex: 1;
+
+			}
+			.container .aside{
+				background: lightcoral;
+				width:200px;
+			}
+			.footer{
+				height:50px;
+				background: lightseagreen;
+			}
+			@media all and (max-width: 1024px) {
+				.wrap{width:640px;}
+				.container .aside{width:130px;}
+				}
+		
+
+			@media all and (max-width: 768px) {
+				 body { background-color: lightgreen; } 
+				}
+			@media all and (max-width: 640px) {
+				.wrap{width:100%;}
+				.container{display: inherit;height:auto;}
+				.container .section{height: 300px;}
+				.container .aside{
+					height: 100px;
+					width:auto;
+				}
 			}
 		</style>
 
