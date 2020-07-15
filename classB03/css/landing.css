@@ -69,4 +69,7 @@
     .product .box_unit:nth-child(3) .txt{
         transform: translateY(-210px);
     }
+    .product .box_unit + .box_unit{
+        margin-top:70px;
+    }
 }
