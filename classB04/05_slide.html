@@ -8,15 +8,18 @@
     
 		<style>
 			.wrap{padding:50px;text-align:center;}
-			.wrap .box{height:200px; background:#da56be;}
-		</style>
+			.wrap .box{height:200px;width:100%; background:#da56be;}
+    </style>
+    <script src="js/jquery-1.8.3.min.js"></script>
 		<script>
-
+      $(function(){
+        $(".box").slideDown(500);
+      })
 		</script>
   </head>
   <body>
     <div class="wrap">
-			<div class="box"></div>
+			<div class="box" style="display: none;"></div>
     </div>
   </body>
 </html>

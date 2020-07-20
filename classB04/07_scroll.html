@@ -11,8 +11,20 @@
 			.wrap .box{height:2000px; background:#da56be;}
 			.wrap .btn_top{width:100px; height:100px; line-height:100px;  display:block; background:#5697da; position:fixed; bottom:10px; right:10px; color:#fff; font-weight:bold; font-size:20px; text-align:center; border:0}
 		</style>
+		<script src="js/jquery-1.8.3.min.js"></script>
 		<script>
+			$(function(){
+				//$(window).scroll(function(){
+				//	console.log($("html").scrollTop())
+				//})
 
+				$(".btn_top").click(function(){
+					//$("html").scrollTop(0)
+					$("html").animate({
+						"scrollTop":0
+					},1000)
+				})
+			})
 		</script>
   </head>
   <body>
