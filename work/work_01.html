@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>스크립트 200722</title>
+	<link href="css/reset.css" rel="stylesheet" type="text/css" />
+	<script>
+        
+    // function sample(){
+    //   console.log("가나다");
+    // }
+    // sample();
+    // console.log(10>5);
+    
+    //var a =10;
+    //var b =9;
+    //b++;
+    //b++; a랑 같은 10 이여서 실행안됨 b++;없으면 실행가능
+
+    //if(a> b){
+    //console.log("참일 경우 실행")
+    //}else{
+     // console.log("거짓일 경우 실행")
+    //}
+
+    // 반복문
+    //console.log(0);
+    //console.log(1);
+    //console.log(2);
+    //console.log(3);
+    //console.log(4);
+
+	//for(var i=0; i<999; i++){
+    //  console.log(i)
+    //}
+	
+	for(var i=1; i<=10; i++){ //i는 1이고; 10보다 작거나같을때; 1씩 증가
+		if(i !=5){ //i가 5가 아닐때 //==5 일 경우 5만 출력됨 != 아닐때
+			console.log(i);
+		}
+	}
+	
+	for(var a=2; a<10; a++){
+		for(var b=2; b<10; b++){
+			var c=a*b;
+			console.log(a+"x"+b+"="+c);
+		}
+	}
+	</script>
+	<style>
+	
+	.wrap{font-family:'Malgun Gothic';text-align:center;}
+	
+	header{background:#333;padding:25px;}
+	header h1{font-size:28px;color:#fff;font-weight:700;}
+	
+	.container{width:1170px;margin:0 auto;}
+	.section{margin:20px 0;}
+	.section p{font-size:18px;}
+	
+	</style>
+  </head>
+  <body>
+    <div class="wrap">
+		<header>
+			<h1>스크립트 200722</h1>
+		</header>
+		<div class="container">
+			<div class="section">
+				<p>1. for문으로 1~10 콘솔 출력하는 중간에 5만 출력이 안되도록 로직을 작성하시오.</p>
+			</div>
+			
+			<div class="section">
+				<p>2. 구구단을 출력하시오. (2중 for문)</p>
+			</div>
+		</div>
+	</div>
+  </body>
+</html>
