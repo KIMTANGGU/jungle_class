@@ -14,6 +14,7 @@
 			
 			$(function(){
 				var complateData;
+				alert("aaa")
 				$.ajax({
 					url:"js/data.json",
 					dataType:'json',
@@ -23,7 +24,7 @@
 					}
 				})
 				function init(){
-					alert("aaa")
+					
 					//console.log(complateData.length)
 					for(var i=0; i<complateData.length; i++){
 						var name = complateData[i].name;
