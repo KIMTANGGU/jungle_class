@@ -113,3 +113,28 @@
 .section.complete .txt_price{
 	font-size:20px;
 }
+
+.section.complete .ico_complete{
+	height:128px;
+	width:128px;
+	margin: 0 auto 50px;
+	background: url(../img/ico_complete.png) no-repeat 0 0;
+}
+.hide{
+	position: absolute;
+	left:0;
+	top:0;
+	width:1px;
+	height: 1px;
+	overflow: hidden;
+	z-index:-1;
+}
+
+.reset{
+	margin-top: 10px;
+	background: #FF5F40;
+	color: #fff;
+	width:100px;
+	height:40px;
+	border: 0;
+}

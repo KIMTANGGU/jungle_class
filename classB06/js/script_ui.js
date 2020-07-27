@@ -1,7 +1,7 @@
 $(function(){
     //첫 화면 세팅 버튼
     $(".btn_setting").click(function(){
-        $(this).parent().hide();
+        $(this).parent().slideUp();
         loadDataFn();
     });
 
@@ -22,7 +22,15 @@ $(function(){
     };
 
     function settingSeatFn(){
-        $(".section.reservation").show();
+        $(".section.reservation").slideDown();
+
+        //목록 누적을 막기위한 목록 지우기
+        $(".section.reservation > ol > li").remove();
+
+        //하단 선택정보 초기화
+        $(".txt_info_number").text("");
+        $(".txt_info_total").text(0);
+
         //파싱작업
         //console.log(complateData.length)
         for(var i=0; i<complateData.length; i++){
@@ -65,11 +73,22 @@ $(function(){
 
             //완료 클릭이벤트
             $(".btn_submit").click(function(){
-                $(".section.reservation").hide();
-                $(".section.complete").show();
-                $(".section.complete .txt_number").text(name);
-                $(".section.complete .txt_price strong").text(price);
-                
+                console.log(selectArray.length)
+                if(selectArray.length > 0){
+                    $(".section.reservation").slideUp();
+                    $(".section.complete").slideDown();
+                    $(".section.complete .txt_number").text(name);
+                    $(".section.complete .txt_price strong").text(price);
+                }else{
+                    alert("자리를 선택해 주세요");
+                }
+                   
+            });
+
+            //리셋
+            $(".section.complete .reset").click(function(){
+                $(".box_intro").slideDown();
+                $(".section.complete").slideUp();
             });
 
 
