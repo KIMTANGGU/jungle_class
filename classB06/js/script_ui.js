@@ -25,5 +25,12 @@ $(function(){
     function settionSearFn(){
         //파싱작업
         console.log(complateData.length)
+        for(var i=0; i<complateData.length; i++){
+            var name = complateData[i].name;
+            var price = complateData[i].price;
+            var reserve = complateData[i].reserve; 
+        }
+
+        $(".section.reservetion > ol").append('<li class="unit"><button data-price="'+price+'" '+reserve+'>'+name+'</button></li>');
     }
 })
