@@ -83,6 +83,7 @@ body{padding:10px;}
 /* 입력창 */
 .chat_wrap .txt_area{
  padding-top:5px;
+ background-color: #fff;
 }
 .chat_wrap .txt_area input{
     border:0;
@@ -127,7 +128,7 @@ body{padding:10px;}
         bottom: 5px;
         left: 5px;
         right: 5px;
-        background-color: #fff;
+        
     }
 
     .chat_wrap .txt_area input{
