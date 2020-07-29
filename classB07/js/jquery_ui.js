@@ -37,6 +37,9 @@ $(function(){
                 },10)
             },30)
         })
+        $(".txt_area input").focusout(function(){
+            $(".chat_wrap").removeClass("keypad_on")
+        })
     }
 
 });
