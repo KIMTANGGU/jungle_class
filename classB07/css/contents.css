@@ -13,6 +13,7 @@ body{padding:10px;}
     padding:10px;
     border-radius: 5px;
     overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .chat_wrap .item{
@@ -97,4 +98,28 @@ body{padding:10px;}
 }
 .chat_wrap .txt_area input + input{
     margin-top:5px;
+}
+
+/* 모바일 적용 */
+@media all and (max-width:768px){
+    body,html{
+        padding:0;
+        height:100%;
+    }
+
+    .chat_wrap{
+        height:100%;
+        box-sizing: border-box;
+        font-size: 15px;
+        width:auto;
+        border: 0;
+    }
+    .chat_wrap .inner{
+        height: calc(100% - 110px);
+    }
+
+    .chat_wrap .item .box .time{
+        font-size: 13px;
+    }
+
 }
