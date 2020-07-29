@@ -1,3 +1,6 @@
+var isIos = /iphone|ipad|ipod/i.test(navigator.userAgent) ? true : false;
+
+
 $(function(){
     $(".txt_area input").keypress(function(e){
         if(e.keyCode == 13 && $(this).val().length){ //13이 엔터값 엔터 누를 경우와 입력하고있는 input에 값이 있을때 실행.
@@ -23,6 +26,19 @@ $(function(){
            
         }
     });
+
+    //아이폰 처리
+    if(isIos){
+        $(".txt_area input").focusin(function(){
+            setTimeout(function(){
+                $(".chat_wrap").addClass("keypad_on")
+                $("html").stop().animate({
+                    scrollTop:0
+                },10)
+            },30)
+        })
+    }
+
 });
 
 //현재 시간을 알아내고 값을 반환하는 함수(function)
