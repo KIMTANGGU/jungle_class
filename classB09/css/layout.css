@@ -1,0 +1,30 @@
+/* common */
+body{background: #74cafc;font-family: 'NanumSquareRound',sans-serif;}
+.inner{width:960px;margin: 0 auto;}
+
+/* header */
+.header{}
+
+/* container */
+.container .inner{background: #fff;box-shadow: 23px 23px 13px rgba(39,166,240,0.25) ;overflow: hidden;text-align: center;}
+.container .inner img{box-shadow: 23px 23px 13px rgba(39,166,240,0.25) ;}
+.container .inner .step_list{margin:60px 0 30px;}
+.container .inner .step_list > li{display: inline-block;width:209px;height:209px;padding-top:82px; box-sizing: border-box; background: url(../img/img_circle_01.png) no-repeat center center;vertical-align: middle;}
+.container .inner .step_list > li + li{margin-left:75px;}
+.container .inner .step_list > li + li:before{content: '';display: block;width:31px;height:40px;background: url(../img/img_arr.png) no-repeat;position: absolute; margin-left: -53px;}
+.container .inner .step_list > li strong{font-weight: 800;font-size: 26px;}
+.container .inner .step_list > li p{font-size: 16px;transform: skew(-0.05deg);font-weight: 700;color: #3f3f3f;line-height: 21px;margin-top:8px;}
+.container .inner .txt_help{font-size:18px;line-height: 30px;font-weight: 700;color:#666;padding-bottom: 75px;}
+
+/* footer */
+.footer{position: relative;padding-bottom: 165px;min-width: 960px;}
+.footer:before{content: '';display: block;position: absolute;height: 45px;left:0;right:0;top:0;background: #009cff;box-shadow: 23px 23px 13px rgba(39,166,240,0.25) ;}
+.footer .btn_summit{display: block;position:absolute;left:50%;top:-52px;transform:translate(-50%);box-shadow: 23px 23px 13px rgba(39,166,240,0.25) ; width:302px;height:142px;color:#fff;line-height: 116px;font-size: 30px;font-weight: 700; text-align: center;background: #ff577f;border: 13px solid #fff;box-sizing: border-box;}
+
+@media all and (max-width:768px){
+    .inner{width:auto;}
+    .header .inner > img{width:100%;}
+    .container .inner img{width:100%;}
+    .container .inner .step_list > li{display: block;margin:0 auto;}
+    .container .inner .step_list > li + li{margin-left: auto;}
+}
