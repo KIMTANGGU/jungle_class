@@ -1,0 +1,24 @@
+/* sub common */
+.location_area{height:89px}
+.location_area h2{float:left; line-height: 89px; color:#fff; font-size: 40px; font-weight: 500;}
+.location_area .location{float:right; padding-top: 46px;}
+.location_area .location a{color:#fff; font-size: 16px; line-height: 19px; color: #fff;}
+.location_area .location a + a:before{content: '>'; display: inline-block; margin: 0 4px;}
+.location_area .location a.home:before{content: ''; display: inline-block; width: 16px; height: 18px; background: url(../img/sub/ico_location_home.png); margin: -4px 10px 0 0; 
+vertical-align: middle;}
+
+/* lineup */
+ .lineup .header{background: #376CF0; border: 1px solid #3161D8;}
+ .lineup .location_area{background: #376CF0;}
+
+.section.lineup_comport{background: url(../img/sub/bg_lineup_comfort.png) no-repeat center top; padding:135px 0}
+.section.lineup_comport .inner{width:950px}
+.section.lineup_comport .unit + .unit{margin-top:50px}
+.section.lineup_comport .unit .txt_area{float: left; width: 380px; text-align: right; margin-top:13px;}
+.section.lineup_comport .unit .txt_area .img{margin-right:-10px}
+.section.lineup_comport .unit .txt_area .name{display: block; padding:18px 0 8px; font-size: 30px; font-weight: 500; line-height: 32px;}
+.section.lineup_comport .unit .txt_area .subs{font-size: 20px; line-height: 30px;}
+.section.lineup_comport .unit .img_area{float:right}
+.section.lineup_comport .unit:nth-child(2n) .txt_area{float:right; text-align: left}
+.section.lineup_comport .unit:nth-child(2n) .txt_area .img{margin-left:-10px; margin-right: 0}
+.section.lineup_comport .unit:nth-child(2n) .img_area{float:left}
