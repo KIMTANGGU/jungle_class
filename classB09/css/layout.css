@@ -2,8 +2,7 @@
 body{background: #74cafc;font-family: 'NanumSquareRound',sans-serif;}
 .inner{width:960px;margin: 0 auto;}
 
-/* header */
-.header{}
+
 
 /* container */
 .container .inner{background: #fff;box-shadow: 23px 23px 13px rgba(39,166,240,0.25) ;overflow: hidden;text-align: center;}
